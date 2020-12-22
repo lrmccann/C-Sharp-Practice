@@ -1,0 +1,18 @@
+To declare a string variable we use
+
+    string stringVariable = "I am string"
+
+    - With string being the data type
+    - stringVariable being the variable to hold the string
+    - and DOUBLE quotes around the text you'd like to use
+
+
+String methods in c# are just the same as using methods in JS,
+
+    string greeting = "Hello, I'm communicating through the console.";
+
+    Console.WriteLine(greeting.toLower());  // output: "hello, i'm communicating through the console.
+
+    Console.WriteLine(greeting.toUpper());  // output: "HELLO, I'M COMMUNICATING THROUGH THE CONSOLE.
+
+    Console.WriteLine(greeting.Substring(7)); // output: "I'm communicating through the console."

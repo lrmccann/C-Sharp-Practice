@@ -1,0 +1,8 @@
+C# is an object oriented, component oriented programming language.
+
+C# key features to help build robust and durable applications:
+    1. Garbage Collection, which automatically reclaims memory occupied by unreadchable unsused objects
+    2. Exception Handling, provides a structured and extensible approach to error detection and recovery
+    3. Lambda Expressions, supoort functional programming techniques
+    4. Query Syntax, creates a common patter for working with data from any source
+    5. Pattern Matching, provides syntax to easily seperate data from algorithms in modern distributed systems

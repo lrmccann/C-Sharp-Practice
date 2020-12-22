@@ -1,0 +1,12 @@
+To declare a number we can use a variety of different data type declerations, but one of the most common ones is 
+        int age = 23;
+
+        - With int being the data type
+        - age being the identifier
+        - 23 being the value of age
+
+Number methods are the same as number methods in JS,
+
+    Console.WriteLine($"The sum of 9 and 10 is {9 + 10}");  // output: "The sum of 9 and 10 is 19"
+    
+    Console.WriteLine($"(3 + 2) * 10 is equal to {(3 + 2) * 10}");  // output: "(3 + 2) * 10 is equal to 60"

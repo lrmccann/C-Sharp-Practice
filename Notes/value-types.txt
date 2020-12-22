@@ -1,0 +1,84 @@
+Value Types
+    1. Simple Types
+        - Integral numeric types
+            ~ Represents integer numbers. All integral numeric types are value types. They are also Simple
+              types and can be initialized with literals.
+        - Floating-point numeric types
+            ~ Represents a real number. All Floating-point numeric types are value types. They are also Simple
+              types and can be initialized with literals.
+                ex. int a = 123;
+            ~ Characteristics of floating-point types
+                * Float
+                * Double
+                * Decimal
+                    ex. double a = 12.3;
+        - bool
+            ~ An alias for the .NET System.Boolean structure type that represents a boolean value
+                ex. bool check = true;
+                    Console.WriteLine(check ? "Checked" : "Not Checked"); // output: Checked
+
+                    Console.Write:ine(false ? "Checked" : "Not Checked"); // output: Not Checked
+        - char
+            ~ Supports comparison, equality, increment, and decrement operators
+            ~ You can specify a char value with : 
+                ex. var chars = new[]
+                {
+                    'j',        // a character literal
+                    '\u006A',   // a unicode escape sequence, which is \u followed by hexadecimal representation of character code
+                    '\x006A',  // a hexadecimal escape sequence, which is \x followed by hexadecimal representation of character code
+                    (char) 106,
+                };
+                Console.WriteLine(string.Join(" ", chars)); // output: j j j j
+
+    2. Enum Types
+        - Defined by a set of named constants of the underlying integral numeric type
+            ex. enum Season
+            {
+                Spring,
+                Summer,
+                Autumn,
+                Winter
+            }
+
+    3. Structure Types
+        - A value type that can encapsulate data and related funcionality
+        - Typically, you use structure types to design small data-centric types that provide little or no behavior
+            ex. public struct Coords
+            {
+                public Coords(double x, double y)
+                {
+                    X = x;
+                    Y = y;
+                }
+                
+                public double X {get; }
+                public double Y {get; }
+
+                public override string ToString() => $"({X} , {Y}");
+            }
+        - Beggining with C# 7.2, you use the readonly modifier to declare that a struc type is immutable
+            ex. public readonly struct Coords
+                        ....
+
+    4. Nullable Value Types
+        - Written ?, represents all values of its underlying value type and an additional null value
+            ex. double? pi = 3.14;
+            char? letter = 'a';
+
+            int m2 = 10;
+            int? m = m2;
+
+            bool? flag = null
+
+            // An array of nullable value type:
+            int?[] arr = new int?[10];
+
+    5. Tuple Value Types
+        - Available in C# 7.0 and later, the tuples feature provides concise syntax to group multiple data
+          elements in a lightweight data structure
+            ex. (double, int) t1 = (4.5 , 3);
+            Console.WriteLine($"Tuple with elements {t1.Item1} and {t1.Item2}");  // output: Tuple with elements 4.5 and 3
+
+            (double Sum , int Count) t2 = (4.5, 3);
+            Console.WriteLine($"Sum of {t2.Count} elements is {t2.Sum}");  // output: Sum of 3 elements is 4.5
+        - AS THE ABOVE EXAMPLE SHOWS, YOU SPECIFY TYPES OF ALL ITS DATA MEMBERS AND , OPTIONALLY, THE FIELD NAMES

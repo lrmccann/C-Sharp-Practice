@@ -1,0 +1,21 @@
+All apps built using dotnet new Console begin with a using directive that refrences the system namespace
+
+Namespaces provide a hieratchial means of organizing C# programs and libraries, for example
+the System namespace contains a number of types, such as the Console class, IO, and Collections
+
+By convention, a static method named Main serves as the entry point to C# programs
+    - A method contains both an input and output
+        ~ The input is whatever is in the () of Main
+        ~ The output is what goes before the Main , ie static, which tells C# the data it would
+          like to get back
+
+Types and variables:
+    - An identifier is a variable name
+    - There are two kinds of types in C#
+        1. Value Types
+            ~ Conttains it's data directly
+            ~ Each variable of a value type has a copy of it's data 
+        2. Refrence Types (objects)
+            ~ Stores a refrence to it's data
+            ~ It is possbile for two variables of a refrence type to refrence the same object,
+              meaning two variables may the same object
